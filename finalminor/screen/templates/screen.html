@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            function reloadpic() {
+                document.images["screen"].src = "screen.png?random=" + new Date().getTime();
+                setTimeout("reloadpic();", 500);
+            }
+            onload = reloadpic;
+        </script>
+    </head>
+    <body>
+<button onclick="reloadpic();">hello</button>
+
+
+
+        <img width="100%" id="screen">
+    </body>
+</html>
